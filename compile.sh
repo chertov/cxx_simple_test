@@ -5,7 +5,7 @@ mkdir -p $(pwd)/output/
 rm -rf $(pwd)/output/*
 
 export BoostDir=$(pwd)/lib/boost_1_73_0/
-if [ ! -d "${OPENSSL_DIR}" ]; then
+if [ ! -d "${BoostDir}" ]; then
     (
         mkdir -p $(pwd)/lib/
         cd $(pwd)/lib/
