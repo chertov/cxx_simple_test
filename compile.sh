@@ -19,6 +19,7 @@ docker run \
     -v $(pwd)/context/:/context/ \
     -v $(pwd)/output/:/output/ \
     -v $(pwd)/lib/:/user_lib/ \
+    -v /Users/user/dev/camopenwrt/glutinium/hisi-osdrv2/lib/:/hisdk/lib/ \
     -ti --entrypoint "/context/build.sh" \
     jonywtf/bb_rust
 
